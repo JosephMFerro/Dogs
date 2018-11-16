@@ -1,0 +1,7 @@
+<h3>all dogs</h3>
+<hr />
+<%= link_to "New Dog", new_dog_path, class: "btn" %>
+<% @dogs.each do |dog| %>
+  <h5><%= link_to dog.name, dog_path(dog) %></h5>
+  <p>rip 2.14.83</p>
+<% end %> 

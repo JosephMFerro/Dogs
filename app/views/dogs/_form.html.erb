@@ -1,0 +1,24 @@
+
+<%= form_with(model: @dog, local: true, class: "form") do |f| %>
+  <div class="input">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "name" %>
+  </div>
+  <div class="input">
+    <%= f.label :age %>
+    <%= f.number_field :age, required: true, placeholder: "name" %>
+  </div>
+  <div class="input">
+    <%= f.label :weight %>
+    <%= f.number_field :weight, required: true, placeholder: "name" %>
+  </div>
+  <div class="input">
+    <%= f.label :gender %>
+    <%= f.text_field :gender, required: true, placeholder: "name" %>
+  </div>
+  <div class="input">
+    <%= f.label :occupation %>
+    <%= f.text_field :occupation, required: true, placeholder: "name" %>
+  </div>
+  <%= f.submit nil, class: "btn" %>
+<% end %>

@@ -1,0 +1,9 @@
+<h4><%= @dog.name %>'s posts</h4>
+<hr />
+<%= link_to "add post", new_dog_post_path(@dog), class: "btn" %>
+<% @posts.each do |post| %>
+  <h5><%= post.title %></h5>
+  <p><%= post.body %></p>
+  <hr />
+<% end %>
+<%= link_to "back", dog_path(@dog) %>
